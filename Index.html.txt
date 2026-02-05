@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Hana ❤️</title>
+
+<style>
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #1f1c2c, #928dab);
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.container {
+    background: rgba(0,0,0,0.6);
+    padding: 40px;
+    border-radius: 20px;
+    max-width: 500px;
+    text-align: center;
+    box-shadow: 0 0 40px rgba(0,0,0,0.5);
+}
+
+h1 {
+    color: #ff9aa2;
+    margin-bottom: 10px;
+}
+
+p {
+    line-height: 1.7;
+    font-size: 16px;
+}
+
+button {
+    background: #ff4d6d;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    background: #ff1f4d;
+}
+
+.hidden {
+    display: none;
+}
+
+.heart {
+    font-size: 50px;
+    margin: 20px 0;
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+
+footer {
+    margin-top: 30px;
+    font-size: 14px;
+    color: #ccc;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+    <h1>Hana ❤️</h1>
+
+    <p>
+        I made this little page just for you.
+    </p>
+
+    <button onclick="showMessage()">Open Your Message</button>
+
+    <div id="message" class="hidden">
+
+        <div class="heart">❤️</div>
+
+        <p>
+            Knowing you brought warmth, happiness, and meaning into my life.
+            Talking to you made ordinary days feel special.
+        </p>
+
+        <p>
+            You are kind.  
+            You are strong.  
+            You are precious.
+        </p>
+
+        <p>
+            I will always be grateful for the memories, conversations,
+            and the connection we shared.
+        </p>
+
+        <p>
+            I hope you’re taking care of yourself and smiling today.
+        </p>
+
+        <div class="heart">💖</div>
+
+    </div>
+
+    <footer>
+        — Aamir
+    </footer>
+</div>
+
+<script>
+function showMessage() {
+    document.getElementById("message").classList.remove("hidden");
+}
+</script>
+
+</body>
+</html>
